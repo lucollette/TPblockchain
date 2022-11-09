@@ -49,7 +49,7 @@
 - Utilisation du réseau de test goerli, permet de simuler le bon fonctionnement de notre application en effectuant des transactions gratuitement
 - La blockchain sur ce projet permet de lire et d'écrire de la donnée depuis un smart contract, d'émettre ou recevoir de nouvelles transactions et d'écouter les événements émis par le smart contract d'ethereum.  
 
-#### 5 avantages de la Blockchain
+#### 3 avantages de la Blockchain
 
 - La rapidité des transactions grâce au fait que la validation d’un bloc ne prend que quelques secondes à quelques minutes.
 - La sécurité du système, qui est assurée par le fait que la validation est effectuée par un ensemble d’utilisateurs différents, qui ne se connaissent pas. Cela permet de se prémunir du risque de malveillance ou de détournement, puisque les nœuds surveillent le système et se contrôlent mutuellement
