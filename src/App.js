@@ -1,13 +1,11 @@
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import erc20abi from "./contracts/ERC20abi.json";
-//import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList.js";
 
 export default function App() {
   const [txs, setTxs] = useState([]);
   const [contractListened, setContractListened] = useState();
-  const [error, setError] = useState();
   const [contractInfo, setContractInfo] = useState({
     address: "-",
     tokenName: "-",
@@ -46,8 +44,8 @@ export default function App() {
       return () => {
         contractListened.removeAllListeners();
       };
-    }
-  }, [contractInfo.address]);
+    };
+}, [contractInfo.address]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
