@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
-import erc20abi from "./ERC20abi.json";
+import erc20abi from "./contracts/ERC20abi.json";
 //import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList.js";
 
@@ -173,7 +173,7 @@ export default function App() {
         <div className="m-4 credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-grey">
           <div className="mt-4 p-4">
             <h1 className="text-xl font-semibold text-pink-700 text-center">
-              Ecrire un contrat
+              Effectuer une transaction
             </h1>
 
             <form onSubmit={handleTransfer}>
