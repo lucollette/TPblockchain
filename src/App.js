@@ -3,7 +3,6 @@ import { ethers } from "ethers";
 import erc20abi from "./ERC20abi.json";
 //import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList.js";
-<link rel="stylesheet" href="App.css"></link>
 
 export default function App() {
   const [txs, setTxs] = useState([]);
@@ -100,7 +99,7 @@ export default function App() {
           <div className="credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-black">
             <main className="mt-4 p-4">
               <h1 className="text-xl font-semibold text-white-700 text-center">
-                Read from smart contract
+                Lecture à partir du smart contract
               </h1>
               <div className="">
                 <div className="my-3">
@@ -108,7 +107,7 @@ export default function App() {
                     type="text"
                     name="addr"
                     className="input input-bordered block w-full focus:ring focus:outline-none"
-                    placeholder="ERC20 contract address"
+                    placeholder="Adresse du contrat ERC20"
                   />
                 </div>
               </div>
@@ -118,7 +117,7 @@ export default function App() {
                 type="submit"
                 className="btn btn-secondary submit-button focus:ring focus:outline-none w-full"
               >
-                Get token info
+                infos du token
               </button>
             </footer>
             <div className="px-4">
@@ -126,9 +125,9 @@ export default function App() {
                 <table className="table w-full">
                   <thead>
                     <tr>
-                      <th>Name</th>
-                      <th>Symbol</th>
-                      <th>Total supply</th>
+                      <th>Nom</th>
+                      <th>Symbole</th>
+                      <th>Offre totale</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -148,7 +147,7 @@ export default function App() {
                 type="submit"
                 className="btn btn-secondary submit-button focus:ring focus:outline-none w-full"
               >
-                Get my balance
+                Mon solde
               </button>
             </div>
             <div className="px-4">
@@ -156,8 +155,8 @@ export default function App() {
                 <table className="table w-full">
                   <thead>
                     <tr>
-                      <th>Address</th>
-                      <th>Balance</th>
+                      <th>Addresse</th>
+                      <th>Solde</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -174,7 +173,7 @@ export default function App() {
         <div className="m-4 credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-black">
           <div className="mt-4 p-4">
             <h1 className="text-xl font-semibold text-white-700 text-center">
-              Write to contract
+              Ecrire un contrat
             </h1>
 
             <form onSubmit={handleTransfer}>
@@ -183,7 +182,7 @@ export default function App() {
                   type="text"
                   name="recipient"
                   className="input input-bordered block w-full focus:ring focus:outline-none"
-                  placeholder="Recipient address"
+                  placeholder="Adresse destinataire"
                 />
               </div>
               <div className="my-3">
@@ -191,7 +190,7 @@ export default function App() {
                   type="text"
                   name="amount"
                   className="input input-bordered block w-full focus:ring focus:outline-none"
-                  placeholder="Amount to transfer"
+                  placeholder="Montant à transferer"
                 />
               </div>
               <footer className="p-4">
@@ -199,7 +198,7 @@ export default function App() {
                   type="submit"
                   className="btn btn-secondary submit-button focus:ring focus:outline-none w-full"
                 >
-                  Transfer
+                  Transferer
                 </button>
               </footer>
             </form>
@@ -210,7 +209,7 @@ export default function App() {
         <div className="m-4 credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-black">
           <div className="mt-4 p-4">
             <h1 className="text-xl font-semibold text-white-700 text-center">
-              Recent transactions
+              Transactions récentes
             </h1>
             <p>
               <TxList txs={txs} />
