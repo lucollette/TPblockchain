@@ -98,7 +98,7 @@ export default function App() {
         <form className="mb-4" onSubmit={handleSubmit}>
           <div className="credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-black">
             <main className="mt-4 p-4">
-              <h1 className="text-xl font-semibold text-white-700 text-center">
+              <h1 className="text-xl font-semibold text-pink-700 text-center">
                 Lecture à partir du smart contract
               </h1>
               <div className="">
@@ -172,7 +172,7 @@ export default function App() {
         </form>
         <div className="m-4 credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-black">
           <div className="mt-4 p-4">
-            <h1 className="text-xl font-semibold text-white-700 text-center">
+            <h1 className="text-xl font-semibold text-pink-700 text-center">
               Ecrire un contrat
             </h1>
 
@@ -208,7 +208,7 @@ export default function App() {
       <div>
         <div className="m-4 credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-black">
           <div className="mt-4 p-4">
-            <h1 className="text-xl font-semibold text-white-700 text-center">
+            <h1 className="text-xl font-semibold text-pink-700 text-center">
               Transactions récentes
             </h1>
             <p>
