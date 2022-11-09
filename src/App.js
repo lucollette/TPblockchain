@@ -3,6 +3,7 @@ import { ethers } from "ethers";
 import erc20abi from "./ERC20abi.json";
 //import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList.js";
+<link rel="stylesheet" href="App.css"></link>
 
 export default function App() {
   const [txs, setTxs] = useState([]);
@@ -95,10 +96,10 @@ export default function App() {
   return (
     <div className="grid grid-cols-1 gap-2 md:grid-cols-2">
       <div>
-        <form className="m-4" onSubmit={handleSubmit}>
-          <div className="credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-white">
+        <form className="mb-4" onSubmit={handleSubmit}>
+          <div className="credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-black">
             <main className="mt-4 p-4">
-              <h1 className="text-xl font-semibold text-gray-700 text-center">
+              <h1 className="text-xl font-semibold text-white-700 text-center">
                 Read from smart contract
               </h1>
               <div className="">
@@ -115,7 +116,7 @@ export default function App() {
             <footer className="p-4">
               <button
                 type="submit"
-                className="btn btn-primary submit-button focus:ring focus:outline-none w-full"
+                className="btn btn-secondary submit-button focus:ring focus:outline-none w-full"
               >
                 Get token info
               </button>
@@ -145,7 +146,7 @@ export default function App() {
               <button
                 onClick={getMyBalance}
                 type="submit"
-                className="btn btn-primary submit-button focus:ring focus:outline-none w-full"
+                className="btn btn-secondary submit-button focus:ring focus:outline-none w-full"
               >
                 Get my balance
               </button>
@@ -170,9 +171,9 @@ export default function App() {
             </div>
           </div>
         </form>
-        <div className="m-4 credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-white">
+        <div className="m-4 credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-black">
           <div className="mt-4 p-4">
-            <h1 className="text-xl font-semibold text-gray-700 text-center">
+            <h1 className="text-xl font-semibold text-white-700 text-center">
               Write to contract
             </h1>
 
@@ -196,7 +197,7 @@ export default function App() {
               <footer className="p-4">
                 <button
                   type="submit"
-                  className="btn btn-primary submit-button focus:ring focus:outline-none w-full"
+                  className="btn btn-secondary submit-button focus:ring focus:outline-none w-full"
                 >
                   Transfer
                 </button>
@@ -206,9 +207,9 @@ export default function App() {
         </div>
       </div>
       <div>
-        <div className="m-4 credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-white">
+        <div className="m-4 credit-card w-full lg:w-3/4 sm:w-auto shadow-lg mx-auto rounded-xl bg-black">
           <div className="mt-4 p-4">
-            <h1 className="text-xl font-semibold text-gray-700 text-center">
+            <h1 className="text-xl font-semibold text-white-700 text-center">
               Recent transactions
             </h1>
             <p>
